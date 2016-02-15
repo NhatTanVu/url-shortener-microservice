@@ -8,7 +8,7 @@
 
 ## Example creation
 
-### Valid URLs:
+### Valid URLs
 ```
 https://shurli.herokuapp.com/new/https://www.google.com 
 https://shurli.herokuapp.com/new/http://freecodecamp.com/news
@@ -20,7 +20,7 @@ will output
 { "original_url": "http://freecodecamp.com/news", "short_url": "https://shurli.herokuapp.com/5" }
 ```
 
-### Invalid URLs:
+### Invalid URLs
 ```
 https://shurli.herokuapp.com/new/aaa
 ```
@@ -32,7 +32,7 @@ will output
 
 ## Example usage
 
-### Valid URLs:
+### Valid URLs
 ```
 https://shurli.herokuapp.com/4
 ```
@@ -42,7 +42,7 @@ will output
 https://shurli.herokuapp.com/4
 ```
 
-### Invalid URLs:
+### Invalid URLs
 ```
 https://shurli.herokuapp.com/bbb
 ```
