@@ -37,9 +37,9 @@ will output
 https://shurli.herokuapp.com/4
 ```
 
-will output
+will redirect to
 ```
-https://shurli.herokuapp.com/4
+https://www.google.com
 ```
 
 ### Invalid URLs

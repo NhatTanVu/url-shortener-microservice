@@ -5,7 +5,8 @@
    var addButton = document.querySelector('.btn-add');
    var deleteButton = document.querySelector('.btn-delete');
    var clickNbr = document.querySelector('#click-nbr');
-   var apiUrl = 'https://url-shortener-microservice-tan-vu.c9users.io/api/clicks';
+   var appUrl = window.location.origin;
+   var apiUrl = appUrl + '/api/clicks';
 
    function ready (fn) {
       if (typeof fn !== 'function') {

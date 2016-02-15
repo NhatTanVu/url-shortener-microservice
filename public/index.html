@@ -3,28 +3,65 @@
 <html>
 
    <head>
-      <title>Clementine.js - The elegant and lightweight full-stack boilerplate.</title>
+      <title>URL Shortener Microservice</title>
       <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
       <link href="/public/css/main.css" rel="stylesheet" type="text/css">  
    </head>
 
    <body>
       <div class="container">
-         <img src="/public/img/clementine_150.png" />
-         <br />
-         <p class="clementine-text">Clementine.js</p>
-      </div>
-
-      <div class="container">
-         <p>You have clicked the button <span id="click-nbr"></span> times.</p>   
-         <br />
-         <div class="btn-container">
-            <button type="submit" class="btn btn-add">CLICK ME!</button>
-            <button class="btn btn-delete">RESET</button>
+         <h1>API Basejump: URL Shortener microservice</h1>
+         <div>
+            <h2>User stories</h2>
+            <div>
+               <ol>
+                  <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+                  <li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+                  <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+               </ol>
+            </div>
+         </div>
+         <div>
+            <h2>Creation sample</h2>
+            <h3>Valid URLs</h3>
+            <div>
+               <div><a href="https://shurli.herokuapp.com/new/https://www.google.com" target="_blank">https://shurli.herokuapp.com/new/https://www.google.com</a></div>
+               <div><a href="https://shurli.herokuapp.com/new/http://freecodecamp.com/news" target="_blank">https://shurli.herokuapp.com/new/http://freecodecamp.com/news</a></div>
+            </div>
+            <p>will output</p>
+            <div>
+               <div>{ "original_url": "https://www.google.com", "short_url": "https://shurli.herokuapp.com/4" }</div>
+               <div>{ "original_url": "http://freecodecamp.com/news", "short_url": "https://shurli.herokuapp.com/5" }</div>
+            </div>
+            <h3>Invalid URLs</h3>
+            <div>
+               <a href="https://shurli.herokuapp.com/new/aaa" target="_blank">https://shurli.herokuapp.com/new/aaa</a>
+            </div>
+            <p>will output</p>
+            <div>
+               <div>{ "error":"URL invalid" }</div>
+            </div>
+         </div>
+         <div>
+            <h2>Usage sample</h2>
+            <h3>Valid URLs</h3>
+            <div>
+               <a href="https://shurli.herokuapp.com/4" target="_blank">https://shurli.herokuapp.com/4</a>
+            </div>
+            <p>will redirect to</p>
+            <div>
+               <div>https://www.google.com</div>
+            </div>
+            <h3>Invalid URLs</h3>
+            <div>
+               <a href="https://shurli.herokuapp.com/bbb" target="_blank">https://shurli.herokuapp.com/bbb</a>
+            </div>
+            <p>will output</p>
+            <div>
+               <div>{ "error":"No short url found for given input" }</div>
+            </div>
          </div>
       </div>
-
-      <script type="text/javascript" src="/controllers/clickController.client.js"></script>   
    </body>
 
 </html>
