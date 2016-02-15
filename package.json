@@ -1,28 +1,26 @@
 {
-  "name": "clementinejs",
-  "version": "1.0.2",
-  "description": "A light-weight MEAN stack boilerplate.",
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "URL Shortener Microservice",
   "main": "server.js",
   "scripts": {
     "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnstonbl01/clementinejs"
+    "url": "git+https://github.com/tan-vu/url-shortener-microservice.git"
   },
-  "homepage": "http://johnstonbl01.github.io/clementinejs/",
-  "bugs": "https://github.com/johnstonbl01/clementinejs/issues",
+  "homepage": "",
+  "bugs": "",
   "keywords": [
     "MEAN",
     "MongoDB",
     "Express",
-    "Angular",
     "Node",
-    "javascript",
-    "boilerplate"
+    "javascript"
   ],
-  "author": "Blake Johnston",
-  "license": "MIT",
+  "author": "tan-vu",
+  "license": "N/A",
   "dependencies": {
     "express": "^4.13.3",
     "mongodb": "^2.0.42"
