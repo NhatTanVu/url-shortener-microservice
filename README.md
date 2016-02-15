@@ -6,7 +6,7 @@
 2. If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
 3. When I visit that shortened URL, it will redirect me to my original link.
 
-## Example creation
+## Creation sample
 
 ### Valid URLs
 ```
@@ -30,7 +30,7 @@ will output
 { "error":"URL invalid" }
 ```
 
-## Example usage
+## Usage sample
 
 ### Valid URLs
 ```
