@@ -1,6 +1,6 @@
 'use strict';
 
-var autoIncrement = require("mongodb-autoincrement");
+var autoIncrement = require(process.cwd() + "/app/ext/mongodb-autoincrement.modified.js");
 
 function urlShortener (db) {
    var collectionName = 'urls';
